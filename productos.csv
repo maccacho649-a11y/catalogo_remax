@@ -1,0 +1,12 @@
+codigo,producto,modelo,categoria,precio,stock,foto,estado,nuevo
+F001,Funda transparente reforzada,iPhone 13,Fundas,15.00,5,funda-negra.svg|funda-azul.svg,disponible,sí
+F002,Funda transparente reforzada,iPhone 14,Fundas,17.00,2,funda-azul.svg,disponible,
+F003,Funda transparente reforzada,Samsung A54,Fundas,15.00,0,,agotado,
+F004,Funda transparente reforzada,Xiaomi Redmi Note 12,Fundas,15.00,8,funda-rojo.svg,disponible,
+M001,Mica de vidrio templado,iPhone 13,Protectores,8.00,20,,disponible,
+M002,Mica de vidrio templado,iPhone 14,Protectores,8.00,15,,disponible,
+M003,Mica de vidrio templado,Samsung A54,Protectores,8.00,12,,disponible,
+C001,Cargador rápido 20W,,Cargadores,25.00,12,,disponible,sí
+P001,Power bank 10000 mAh,Negro,Baterías,59.90,6,funda-negra.svg,disponible,
+P002,Power bank 10000 mAh,Blanco,Baterías,59.90,3,,disponible,
+X001,Repuesto interno (no visible),,Repuestos,35.00,4,,oculto,

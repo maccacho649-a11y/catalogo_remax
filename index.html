@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo</title>
+  <meta name="description" content="Catálogo de productos. Pide por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <h1 id="nombreNegocio">Catálogo</h1>
+      <button class="cart-btn" id="abrirCarrito" aria-label="Abrir lista de pedido">
+        Mi pedido <span class="cart-count" id="contador">0</span>
+      </button>
+    </div>
+    <div class="wrap filtros">
+      <input type="search" id="buscador" placeholder="Buscar por nombre, marca, modelo o código" aria-label="Buscar productos">
+      <div class="marcas" id="marcas" role="group" aria-label="Marcas" hidden></div>
+      <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="estado" id="estado" role="status">Cargando productos…</p>
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <footer class="wrap pie">
+    <p id="pie"></p>
+  </footer>
+
+  <div class="velo" id="velo" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Lista de pedido" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Mi pedido</h2>
+      <button id="cerrarCarrito" aria-label="Cerrar">Cerrar</button>
+    </div>
+    <ul class="lista" id="lista"></ul>
+    <div class="drawer-foot">
+      <p class="total">Total: <strong id="total">S/ 0.00</strong></p>
+      <button class="btn-wa" id="enviarPedido">Enviar pedido por WhatsApp</button>
+      <button class="btn-link" id="vaciar">Vaciar pedido</button>
+    </div>
+  </aside>
+
+  <div class="zoom-box" id="zoomBox" hidden role="dialog" aria-label="Foto ampliada">
+    <img id="zoomImg" alt="Foto ampliada del producto">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
